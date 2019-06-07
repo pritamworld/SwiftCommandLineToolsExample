@@ -79,7 +79,7 @@ let sum = add(n: 5)
 
 print("SUM : \(sum)")
 
-//Print Array using resursion
+//Print Array using recursion
 
 let a = [1, 2, 3, 4, 5]
 
