@@ -95,4 +95,34 @@ func printArray(a :[Int], index: Int)
 
 printArray(a: a, index: a.count - 1)
 
+enum CompassPoint {
+    case north
+    case south
+    case east
+    case west
+}
+
+print(CompassPoint.east)
+
+enum Planet: CaseIterable {
+    case mercury, venus, earth, mars, jupiter, saturn, uranus, neptune
+    case coffee, tea, juice
+}
+
+for v in Planet.allCases
+{
+    print(v)
+}
+
+
+enum Barcode {
+    case upc(Int, Int, Int, Int)
+    case qrCode(String)
+}
+
+var productBarcode = Barcode.upc(8, 85909, 51226, 3)
+print(productBarcode)
+
+productBarcode = .qrCode("ABCDEFGHIJKLMNOP")
+print(productBarcode)
 
