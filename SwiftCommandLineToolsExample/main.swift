@@ -87,8 +87,9 @@ func printArray(a :[Int], index: Int)
 {
     if(index != -1)
     {
+        print(a[index]) //Print Reverse Array
         printArray(a: a, index: index - 1)
-        print(a[index])
+        //print(a[index]) //Print Forward array
     }
 }
 
