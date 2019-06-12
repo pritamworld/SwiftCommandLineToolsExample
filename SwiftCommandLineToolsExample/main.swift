@@ -180,3 +180,10 @@ do {
 }
 //------------------------
 
+
+//https://www.raywenderlich.com/666-filemanager-class-tutorial-for-macos-getting-started-with-the-file-system
+let home = FileManager.default.homeDirectoryForCurrentUser
+print("HOME : \(home)")
+
+let path1 = FileManager.default.urls(for: .allApplicationsDirectory, in: .userDomainMask)
+print(path1)
