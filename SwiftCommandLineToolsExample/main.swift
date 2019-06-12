@@ -187,3 +187,29 @@ print("HOME : \(home)")
 
 let path1 = FileManager.default.urls(for: .allApplicationsDirectory, in: .userDomainMask)
 print(path1)
+
+
+
+/////Read txt file
+
+
+if let pathText = Bundle.main.path(forResource: "SampleData", ofType: "txt") // file path for file "data.txt"
+{
+    do {
+        let text = try String(contentsOfFile: pathText)
+        
+        print(text.getEmails()) //Finding all emails from text
+        //print(text)
+        var s =  text.split(separator: " ")
+        //print(s)
+        
+        s.sort(by: <)
+        //print(s)
+    }
+    catch
+    {
+        print("Error reading txt file")
+    }
+}else{
+     print("NO reading txt file")
+}
