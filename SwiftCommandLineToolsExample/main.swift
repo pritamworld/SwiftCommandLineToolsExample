@@ -199,6 +199,7 @@ if let pathText = Bundle.main.path(forResource: "SampleData", ofType: "txt") // 
         let text = try String(contentsOfFile: pathText)
         
         print(text.getEmails()) //Finding all emails from text
+        print(text.getAllHashTags()) //Finding all #tags from text
         //print(text)
         var s =  text.split(separator: " ")
         //print(s)
