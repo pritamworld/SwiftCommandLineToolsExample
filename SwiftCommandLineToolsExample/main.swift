@@ -214,3 +214,55 @@ if let pathText = Bundle.main.path(forResource: "SampleData", ofType: "txt") // 
 }else{
      print("NO reading txt file")
 }
+
+//https://learnappmaking.com/map-reduce-filter-swift-programming/
+
+let celcius1 = [-5.0, 10.0, 21.0, 33.0, 50.0]
+var fahrenheit1:[Double] = []
+
+for value in celcius1 {
+    fahrenheit1 += [value * (9/5) + 32]
+}
+
+print(fahrenheit1)
+// Output: [23.0, 50.0, 69.8, 91.4, 122.0]
+
+let celcius2 = [-5.0, 10.0, 21.0, 33.0, 50.0]
+let fahrenheit2 = celcius2.map { $0 * (9/5) + 32 }
+print(fahrenheit2)
+// Output: [23.0, 50.0, 69.8, 91.4, 122.0]
+
+
+let celcius3 = [-5.0, 10.0, 21.0, 33.0, 50.0]
+
+let fahrenheit3 = celcius3.map({ (value: Double) -> Double in
+    return value * (9/5) + 32
+})
+
+print(fahrenheit3)
+
+
+let values1 = [3, 4, 5]
+let sum1 = values1.reduce(0, +)
+print(sum1)
+// Output: 12
+
+
+let values2 = [7.0, 3.0, 10.0]
+let avg:Double = values2.reduce(0.0) { $0 + ($1 / Double(values2.count)) }
+print(avg)
+// Output: 6.667
+
+
+let values3 = [7.0, 3.0, 10.0]
+let avg1 = values3.reduce(0.0, { (result:Double, item:Double) -> Double in
+    return result + (item / Double(values3.count))
+})
+print(avg1)
+// Output: 6.667
+
+
+let values4 = [11, 13, 14, 17, 21, 33, 22]
+let even = values4.filter { $0 % 2 == 0 }
+print(even)
+// Output: [14, 22]
