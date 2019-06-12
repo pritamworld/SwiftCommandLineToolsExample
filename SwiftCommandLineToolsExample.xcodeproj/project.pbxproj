@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		28014FE62237F5490023C556 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28014FE52237F5490023C556 /* main.swift */; };
+		2836F2E422B134EB0016DABB /* Fruits.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2836F2E122B132230016DABB /* Fruits.plist */; };
+		2836F2E622B1360F0016DABB /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2836F2E522B1360F0016DABB /* Preferences.swift */; };
+		2836F2E922B136640016DABB /* Preferences.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2836F2E822B136370016DABB /* Preferences.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		28014FE02237F5490023C556 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		2836F2E322B134DA0016DABB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				2836F2E922B136640016DABB /* Preferences.plist in CopyFiles */,
+				2836F2E422B134EB0016DABB /* Fruits.plist in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -26,6 +40,8 @@
 		28014FE22237F5490023C556 /* SwiftCommandLineToolsExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftCommandLineToolsExample; sourceTree = BUILT_PRODUCTS_DIR; };
 		28014FE52237F5490023C556 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2836F2E122B132230016DABB /* Fruits.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Fruits.plist; sourceTree = "<group>"; };
+		2836F2E522B1360F0016DABB /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		2836F2E822B136370016DABB /* Preferences.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Preferences.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +74,20 @@
 		28014FE42237F5490023C556 /* SwiftCommandLineToolsExample */ = {
 			isa = PBXGroup;
 			children = (
+				2836F2E722B136200016DABB /* Other */,
 				28014FE52237F5490023C556 /* main.swift */,
 				2836F2E122B132230016DABB /* Fruits.plist */,
 			);
 			path = SwiftCommandLineToolsExample;
+			sourceTree = "<group>";
+		};
+		2836F2E722B136200016DABB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				2836F2E522B1360F0016DABB /* Preferences.swift */,
+				2836F2E822B136370016DABB /* Preferences.plist */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -75,6 +101,7 @@
 				28014FDF2237F5490023C556 /* Frameworks */,
 				28014FE02237F5490023C556 /* CopyFiles */,
 				28014FED2237F84E0023C556 /* ShellScript */,
+				2836F2E322B134DA0016DABB /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -142,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2836F2E622B1360F0016DABB /* Preferences.swift in Sources */,
 				28014FE62237F5490023C556 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

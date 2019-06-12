@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>webserviceURL</key>
+	<string>http://www.google.com</string>
+	<key>itemsPerPage</key>
+	<integer>30</integer>
+	<key>backupEnabled</key>
+	<true/>
+</dict>
+</plist>

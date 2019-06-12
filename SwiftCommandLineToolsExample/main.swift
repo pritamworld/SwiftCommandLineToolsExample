@@ -128,6 +128,8 @@ print(productBarcode)
 
 
 //https://learnappmaking.com/plist-property-list-swift-how-to/
+//Follow the given steps
+//https://stackoverflow.com/questions/27771846/pathforresource-returns-nil-in-mac-os-x-console-application-swift/27778715
 func getPlist(withName name: String) -> [String]?
 {
     if  let path = Bundle.main.path(forResource: name, ofType: "plist"),
@@ -141,5 +143,40 @@ func getPlist(withName name: String) -> [String]?
 
 if let fruits = getPlist(withName: "Fruits") {
     print(fruits)
+}else{
+    print("No able to read Fruits.plist file")
 }
+
+
+//------------------------------------------------------
+
+//Reading A Plist With Codable
+if  let path        = Bundle.main.path(forResource: "Preferences", ofType: "plist"),
+    let xml         = FileManager.default.contents(atPath: path),
+    let preferences = try? PropertyListDecoder().decode(Preferences.self, from: xml)
+{
+    print(path)
+    print(preferences.webserviceURL)
+}
+
+
+//Writing Data To A Plist
+let preferences = Preferences(webserviceURL: "https://api.twitter.com", itemsPerPage: 10, backupEnabled: false)
+
+let encoder = PropertyListEncoder()
+encoder.outputFormat = .xml
+
+//Write at file:///Users/pritesh.patel/Documents/Preferences.plist
+let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("Preferences.plist")
+
+print(path)
+
+do {
+    let data = try encoder.encode(preferences)
+    try data.write(to: path)
+    print("Data written to plist")
+} catch {
+    print(error)
+}
+//------------------------
 
