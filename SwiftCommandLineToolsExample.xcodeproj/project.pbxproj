@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		28014FE22237F5490023C556 /* SwiftCommandLineToolsExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftCommandLineToolsExample; sourceTree = BUILT_PRODUCTS_DIR; };
 		28014FE52237F5490023C556 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2836F2E122B132230016DABB /* Fruits.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Fruits.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				28014FE52237F5490023C556 /* main.swift */,
+				2836F2E122B132230016DABB /* Fruits.plist */,
 			);
 			path = SwiftCommandLineToolsExample;
 			sourceTree = "<group>";

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Fruits.plist
+   SwiftCommandLineToolsExample
+
+   Created by Pritesh Patel on 2019-06-12.
+   Copyright (c) 2019 MoxDroid. All rights reserved.
+-->
+<plist version="1.0">
+    <array>
+        <string>Orange</string>
+        <string>Pineapple</string>
+        <string>Raspberry</string>
+        <string>Banana</string>
+        <string>Pear</string>
+        <string>Apple</string>
+    </array>
+</plist>

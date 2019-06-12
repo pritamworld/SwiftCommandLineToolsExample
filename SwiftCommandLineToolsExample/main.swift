@@ -106,7 +106,7 @@ print(CompassPoint.east)
 
 enum Planet: CaseIterable {
     case mercury, venus, earth, mars, jupiter, saturn, uranus, neptune
-    case coffee, tea, juice
+    //case coffee, tea, juice
 }
 
 for v in Planet.allCases
@@ -125,4 +125,21 @@ print(productBarcode)
 
 productBarcode = .qrCode("ABCDEFGHIJKLMNOP")
 print(productBarcode)
+
+
+//https://learnappmaking.com/plist-property-list-swift-how-to/
+func getPlist(withName name: String) -> [String]?
+{
+    if  let path = Bundle.main.path(forResource: name, ofType: "plist"),
+        let xml = FileManager.default.contents(atPath: path)
+    {
+        return (try? PropertyListSerialization.propertyList(from: xml, options: .mutableContainersAndLeaves, format: nil)) as? [String]
+    }
+    
+    return nil
+}
+
+if let fruits = getPlist(withName: "Fruits") {
+    print(fruits)
+}
 
