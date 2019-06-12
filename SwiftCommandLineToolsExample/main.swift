@@ -266,3 +266,21 @@ let values4 = [11, 13, 14, 17, 21, 33, 22]
 let even = values4.filter { $0 % 2 == 0 }
 print(even)
 // Output: [14, 22]
+
+
+
+//Dictionary Grouping - https://www.tutorialspoint.com/swift/swift_dictionaries.htm
+var cities = ["Delhi","Bangalore","Hyderabad","Dehradun","Bihar"]
+print(cities)
+var groupedCities = Dictionary(grouping: cities ) { $0.first! }
+print(groupedCities)
+
+//Sequence Based Initialization
+var Distance = [2000, 10, 620, 1000, 200]
+let cityDistanceDict = Dictionary(uniqueKeysWithValues: zip(cities, Distance))
+print(cityDistanceDict)
+
+
+//Dictionary Filtering
+var closeCities = cityDistanceDict.filter { $0.value < 1000 }
+print(closeCities)
