@@ -298,6 +298,37 @@ func readJSONFile(jsonFileName: String)
     guard let json = try? JSONSerialization.jsonObject(with: data, options: []) else{return}
     
     print(json)
+    
+    
+    //Convert JSON Response to Dictiponary
+    if let dictionary = json as? [String: Any] {
+        
+        if let id = dictionary["id"] as? Int {
+            print("ID : \(id)")
+        }
+        
+        if let name = dictionary["name"] as? String {
+            print("Name : \(name)")
+        }
+        
+        if let username = dictionary["username"] as? String {
+            print("Username : \(username)")
+        }
+        
+        //Read Company as Dictionary and then fetch the values from it
+        if let company = dictionary["company"] as? Dictionary<String, Any> {
+            if let name = company["name"] as? String {
+                //This doesn't get printed.
+                print("Company Name : \(name)")
+            }
+        }
+        
+        for (key, value) in dictionary {
+            print("Key is [\(key)] and value is [\(value)]" )
+        }
+        
+    }
+
 }
 
 readJSONFile(jsonFileName: "Users")
