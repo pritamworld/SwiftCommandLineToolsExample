@@ -14,6 +14,8 @@
 		2836F2EC22B13FAA0016DABB /* SampleData.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2836F2EB22B13DEE0016DABB /* SampleData.txt */; };
 		2836F2EE22B142170016DABB /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2836F2ED22B142170016DABB /* String+Extension.swift */; };
 		2836F2F122B3F9550016DABB /* Users.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2836F2F022B3F8EE0016DABB /* Users.json */; };
+		289687CF22C3AA9A00AA1E44 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289687CE22C3AA9A00AA1E44 /* Date+Extension.swift */; };
+		289687D122C3AAEC00AA1E44 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289687D022C3AAEC00AA1E44 /* Int+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +52,8 @@
 		2836F2EB22B13DEE0016DABB /* SampleData.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleData.txt; sourceTree = "<group>"; };
 		2836F2ED22B142170016DABB /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		2836F2F022B3F8EE0016DABB /* Users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
+		289687CE22C3AA9A00AA1E44 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		289687D022C3AAEC00AA1E44 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 		28014FE42237F5490023C556 /* SwiftCommandLineToolsExample */ = {
 			isa = PBXGroup;
 			children = (
+				289687D222C3AB0C00AA1E44 /* Extensions */,
 				2836F2EF22B3F8CF0016DABB /* handling_json */,
 				2836F2EA22B13DC60016DABB /* ReadTextFiles */,
 				2836F2E722B136200016DABB /* Other */,
@@ -115,6 +120,15 @@
 				2836F2F022B3F8EE0016DABB /* Users.json */,
 			);
 			path = handling_json;
+			sourceTree = "<group>";
+		};
+		289687D222C3AB0C00AA1E44 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				289687CE22C3AA9A00AA1E44 /* Date+Extension.swift */,
+				289687D022C3AAEC00AA1E44 /* Int+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +210,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				289687D122C3AAEC00AA1E44 /* Int+Extension.swift in Sources */,
 				2836F2E622B1360F0016DABB /* Preferences.swift in Sources */,
+				289687CF22C3AA9A00AA1E44 /* Date+Extension.swift in Sources */,
 				2836F2EE22B142170016DABB /* String+Extension.swift in Sources */,
 				28014FE62237F5490023C556 /* main.swift in Sources */,
 			);

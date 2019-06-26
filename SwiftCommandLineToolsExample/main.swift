@@ -332,3 +332,9 @@ func readJSONFile(jsonFileName: String)
 }
 
 readJSONFile(jsonFileName: "Users")
+
+
+//https://matteomanferdini.com/network-requests-rest-apis-ios-swift/
+let today = Date()
+print(today.timeAgo)
+print(10000.thousandsFormatting)
