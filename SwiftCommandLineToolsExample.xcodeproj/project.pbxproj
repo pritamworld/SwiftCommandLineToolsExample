@@ -16,6 +16,7 @@
 		2836F2F122B3F9550016DABB /* Users.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2836F2F022B3F8EE0016DABB /* Users.json */; };
 		289687CF22C3AA9A00AA1E44 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289687CE22C3AA9A00AA1E44 /* Date+Extension.swift */; };
 		289687D122C3AAEC00AA1E44 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289687D022C3AAEC00AA1E44 /* Int+Extension.swift */; };
+		289687D522C3B40A00AA1E44 /* launches.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 289687D422C3B3DC00AA1E44 /* launches.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
+				289687D522C3B40A00AA1E44 /* launches.json in CopyFiles */,
 				2836F2F122B3F9550016DABB /* Users.json in CopyFiles */,
 				2836F2EC22B13FAA0016DABB /* SampleData.txt in CopyFiles */,
 				2836F2E922B136640016DABB /* Preferences.plist in CopyFiles */,
@@ -54,6 +56,7 @@
 		2836F2F022B3F8EE0016DABB /* Users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
 		289687CE22C3AA9A00AA1E44 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		289687D022C3AAEC00AA1E44 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		289687D422C3B3DC00AA1E44 /* launches.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = launches.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,7 @@
 		28014FE42237F5490023C556 /* SwiftCommandLineToolsExample */ = {
 			isa = PBXGroup;
 			children = (
+				289687D322C3B3BC00AA1E44 /* SpaceX */,
 				289687D222C3AB0C00AA1E44 /* Extensions */,
 				2836F2EF22B3F8CF0016DABB /* handling_json */,
 				2836F2EA22B13DC60016DABB /* ReadTextFiles */,
@@ -129,6 +133,14 @@
 				289687D022C3AAEC00AA1E44 /* Int+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		289687D322C3B3BC00AA1E44 /* SpaceX */ = {
+			isa = PBXGroup;
+			children = (
+				289687D422C3B3DC00AA1E44 /* launches.json */,
+			);
+			path = SpaceX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

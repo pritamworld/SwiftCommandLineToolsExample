@@ -338,3 +338,16 @@ readJSONFile(jsonFileName: "Users")
 let today = Date()
 print(today.timeAgo)
 print(10000.thousandsFormatting)
+
+func readSpaceXLaunchesJSONFile(jsonFileName: String)
+{
+    let url = Bundle.main.url(forResource: jsonFileName, withExtension: "json")
+    
+    guard let jsonData = url else{return}
+    guard let data = try? Data(contentsOf: jsonData) else { return }
+    guard let json = try? JSONSerialization.jsonObject(with: data, options: []) else{return}
+    
+    print(json)
+}
+
+readSpaceXLaunchesJSONFile(jsonFileName: "launches.json")
