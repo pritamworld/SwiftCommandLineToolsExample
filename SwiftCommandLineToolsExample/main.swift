@@ -350,4 +350,4 @@ func readSpaceXLaunchesJSONFile(jsonFileName: String)
     print(json)
 }
 
-readSpaceXLaunchesJSONFile(jsonFileName: "launches.json")
+readSpaceXLaunchesJSONFile(jsonFileName: "launches")
