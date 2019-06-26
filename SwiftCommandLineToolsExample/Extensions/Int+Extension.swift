@@ -20,4 +20,5 @@ extension Int {
         formatter.currencySymbol = "€ "
         return formatter.string(from: NSNumber(value: Float(self) / 100))!
     }
+    
 }

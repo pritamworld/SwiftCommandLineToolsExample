@@ -46,4 +46,13 @@ extension String {
         
         return []
     }
+    
+    var integerValue: Int? {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        guard let number = formatter.number(from: self) else {
+            return nil
+        }
+        return Int(number.doubleValue)
+    }
 }
