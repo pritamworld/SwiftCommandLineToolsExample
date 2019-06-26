@@ -351,3 +351,11 @@ func readSpaceXLaunchesJSONFile(jsonFileName: String)
 }
 
 readSpaceXLaunchesJSONFile(jsonFileName: "launches")
+
+
+//TimeStamp to Date
+print("Time Stamp : \(Date().timeIntervalSince1970)")
+
+let unixTimestamp = 1480134638.0
+let date = Date(timeIntervalSince1970: unixTimestamp)
+print(date)
