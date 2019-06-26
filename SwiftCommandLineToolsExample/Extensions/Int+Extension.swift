@@ -13,4 +13,11 @@ extension Int {
         formatter.numberStyle = .decimal
         return formatter.string(from: NSNumber(value: self))!
     }
+    
+    var moneyAmount: String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.currencySymbol = "€ "
+        return formatter.string(from: NSNumber(value: Float(self) / 100))!
+    }
 }

@@ -338,6 +338,7 @@ readJSONFile(jsonFileName: "Users")
 let today = Date()
 print(today.timeAgo)
 print(10000.thousandsFormatting)
+print(10000.moneyAmount)
 
 func readSpaceXLaunchesJSONFile(jsonFileName: String)
 {
@@ -350,7 +351,7 @@ func readSpaceXLaunchesJSONFile(jsonFileName: String)
     print(json)
 }
 
-readSpaceXLaunchesJSONFile(jsonFileName: "launches")
+//readSpaceXLaunchesJSONFile(jsonFileName: "launches")
 
 
 //TimeStamp to Date
