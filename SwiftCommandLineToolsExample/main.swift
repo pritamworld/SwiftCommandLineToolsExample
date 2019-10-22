@@ -383,3 +383,13 @@ func doSomething() {
         //step 4, finishing the execution
     }
 }//It will print the sumof all the given numbers.
+
+
+//Operator Loading Example
+extension Int {
+    static func + (left: Int, right: Int) -> Int {
+        return left * right
+    }
+}
+
+print(4 + 2)
